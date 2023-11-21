@@ -21,11 +21,11 @@ const CompanionIdPage = async ({
     return redirectToSignIn();
   }
 
-  // const validSubscription = await checkSubscription();
+  const validSubscription = await checkSubscription();
 
-  // if (!validSubscription) {
-  //   return redirect("/");
-  // }
+  if (!validSubscription) {
+    return redirect("/");
+  }
 
   const companion = await prismadb.companion.findUnique({
     where: {

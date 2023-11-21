@@ -1,5 +1,5 @@
 import prismadb from "@/lib/prismadb"
-import  Categories  from "@/components/categories"
+import { Categories } from "@/components/categories"
 import { Companions } from "@/components/companion/companions"
 import SearchInput from "@/components/search-input"
 

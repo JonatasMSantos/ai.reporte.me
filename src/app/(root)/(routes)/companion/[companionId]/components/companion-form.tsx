@@ -93,8 +93,9 @@ export const CompanionForm = ({
         duration: 3000,
       });
 
-      router.refresh();
+      
       router.push("/");
+      router.refresh();
     } catch (error) {
       console.log(error)
       toast({

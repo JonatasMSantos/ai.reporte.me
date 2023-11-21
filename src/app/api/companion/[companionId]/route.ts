@@ -2,7 +2,6 @@ import { auth, currentUser } from "@clerk/nextjs";
 import { NextResponse } from "next/server";
 
 import prismadb from "@/lib/prismadb";
-import { checkSubscription } from "@/lib/subscription";
 
 interface RequestParams {
   params: { companionId: string }

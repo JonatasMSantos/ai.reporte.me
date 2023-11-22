@@ -1,7 +1,5 @@
 # reporte.me - AI
 
-## ChatPanel
-
 ### Description
 
 ChatPanel is a Next.js application that serves as a panel for creating and managing profiles of individuals, whether they be celebrities or ordinary people. The application allows users to input information such as name, description, category, instructions, and an example conversation for each profile. The data is captured and stored in a Prismajs database hosted on Planetscale.

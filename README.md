@@ -24,6 +24,8 @@ ChatPanel is a Next.js application that serves as a panel for creating and manag
 - ChatGPT
 - Redis (Upstash)
 - Clerk
+- Cloudinary (Upload)
+- Stripe (Payment Gateway)
 
 ### Setup Instructions
 

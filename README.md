@@ -1,36 +1,86 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Project Name
 
-## Getting Started
+## ChatPanel
 
-First, run the development server:
+### Description
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+ChatPanel is a Next.js application that serves as a panel for creating and managing profiles of individuals, whether they be celebrities or ordinary people. The application allows users to input information such as name, description, category, instructions, and an example conversation for each profile. The data is captured and stored in a Prismajs database hosted on Planetscale.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Create profiles with name, description, category, instructions, and example conversation.
+- Store profile data in a Prismajs database on Planetscale.
+- Implement a chat feature using Pinecone, Langchain, Replicate, and ChatGPT to simulate conversations with the created profiles.
+- Utilize Redis on Upstash for additional data storage.
+- Authenticate users with Clerk.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Technologies Used
 
-## Learn More
+- Next.js
+- Prismajs
+- Pinecone
+- Langchain
+- Replicate
+- ChatGPT
+- Redis (Upstash)
+- Clerk
 
-To learn more about Next.js, take a look at the following resources:
+### Setup Instructions
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Clone the repository:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   ```bash
+   git clone https://github.com/JonatasMSantos/ai.reporte.me.git
+   ```
+2. Install dependencies:
+    ```bash
+    cd ai.reporte.me
+    npm install
+   ```
+3. Configure environment variables:
+    ```bash
+    NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+    CLERK_SECRET_KEY=
 
-## Deploy on Vercel
+    NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+    NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+    NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/dashboard
+    NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/dashboard
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    OPENAI_API_KEY=
+    REPLICATE_API_TOKEN=
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+    PINECONE_API_KEY=
+    PINECONE_ENVIRONMENT=
+    PINECONE_INDEX=
+
+    UPSTASH_REDIS_REST_URL=
+    UPSTASH_REDIS_REST_TOKEN=
+
+    NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=
+
+    DATABASE_URL=
+
+    STRIPE_API_KEY=
+    STRIPE_WEBHOOK_SECRET=
+
+    NEXT_PUBLIC_APP_URL="http://localhost:3000"
+   ```
+4. Run the application:
+   ```bash
+   npm run dev
+   ```
+### Usage
+
+1. Visit the application in your web browser.
+2. Create a new profile by filling in the required fields.
+3. Explore the chat feature that simulates conversations based on the profile information.
+4. Manage and edit profiles as needed.
+5. Contributions
+
+### License
+This project is licensed under the MIT License.
+
+### Acknowledgments
+The developers of Next.js, Prismajs, Pinecone, Langchain, Replicate, ChatGPT, Redis, and Clerk for providing the tools and services used in this project.
+The open-source community for their valuable contributions.

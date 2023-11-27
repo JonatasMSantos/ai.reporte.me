@@ -12,6 +12,8 @@ async function main() {
         { name: 'Games' },
         { name: 'Animals' },
         { name: 'Philosophy' },
+        { name: 'Chef' },
+        { name: 'Common person' },  
         { name: 'Scientists' },
       ],
     });
